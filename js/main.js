@@ -38,9 +38,21 @@ boton3.addEventListener("click", function () {
 // ejercico 5
 const btn5 = document.getElementById("btn-5");
 const lista = document.getElementById("agreLista");
-console.log(lista);
+
 btn5.addEventListener("click", function () {
   const nuevoElementoLi = document.createElement("li");
   nuevoElementoLi.textContent = "Nuevo elemento de lista";
   lista.appendChild(nuevoElementoLi);
+});
+// ejercicio 6
+const items = document.querySelectorAll('[id^="item"]');
+console.log(items);
+items.forEach(function (item) {
+  item.addEventListener("click", function() {
+    items.forEach(function(item) {
+      item.classList.remove("active");
+    });
+    this.classList.add("active");
+    // this.classList.add('activo');
+  });
 });
