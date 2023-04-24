@@ -1,44 +1,50 @@
+// ejercicio 1
+
 const boton = document.getElementById("buton");
 const mensaje = document.getElementById("mensaje");
-
+let contador = true;
 boton.addEventListener("click", () => {
-  mensaje.textContent = "¡Haz hecho clic en el botón!";
+  if (contador) {
+    mensaje.textContent = "¡Haz hecho clic en el botón!";
+    contador = false;
+  } else {
+    mensaje.textContent = "¡De nuevo haz vuelto hacer click en el botón";
+    contador = true;
+  }
 });
 //
-
+// Ejercicio 2
 const form = document.getElementById("form");
-
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   const name = document.getElementById("text").value;
   alert(`El nombre ingresado es: ${name}`);
 });
-
+// ejercicio  3
 const color = document.getElementById("color");
 const element = document.getElementById("element");
 console.log(element);
 let estado = true;
 color.addEventListener("click", function () {
-  // element.style.backgroundColor = "";
   if (estado) {
-    element.style.backgroundColor = "red";
+    element.style.backgroundColor = "#917FB3";
+    element.style.color = "#ffff";
     estado = false;
   } else {
-    element.style.backgroundColor = "blue";
+    element.style.backgroundColor = "#2A2F4F";
     estado = true;
   }
 });
-// ejercicio
+// ejercicio 4
 const boton3 = document.getElementById("boton3");
 const bloque = document.getElementById("bloque");
 boton3.addEventListener("click", function () {
   bloque.classList.toggle("bloque");
 });
 
-// ejercico 5
+// ejercicio 5
 const btn5 = document.getElementById("btn-5");
 const lista = document.getElementById("agreLista");
-
 btn5.addEventListener("click", function () {
   const nuevoElementoLi = document.createElement("li");
   nuevoElementoLi.textContent = "Nuevo elemento de lista";
@@ -46,7 +52,6 @@ btn5.addEventListener("click", function () {
 });
 // ejercicio 6
 const items = document.querySelectorAll('[id^="item"]');
-
 items.forEach(function (item) {
   item.addEventListener("click", function () {
     items.forEach(function (item) {
@@ -59,19 +64,19 @@ items.forEach(function (item) {
 // ejercicio 7
 // Obtén el elemento con ID "menu"
 const menu = document.getElementById("menu");
-console.log(menu);
+
 1;
 // Agrega un controlador de eventos de desplazamiento a la ventana
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
-    menu.style.backgroundColor = "blue";
+  if (window.scrollY > 1200) {
+    menu.style.backgroundColor = "#3A4F7A";
+    menu.style.color = "#fff";
   } else {
     menu.style.backgroundColor = "";
   }
 });
 // ejercicio 8
 const img = document.getElementById("img");
-
 let estados = true;
 img.addEventListener("mouseover", function () {
   const descripcion = document.getElementById("descripcion");
@@ -115,7 +120,6 @@ const texto = document.getElementById("texto");
 
 image.addEventListener("dragstart", function (event) {
   texto.innerHTML = "Arrastrando la imagen";
- 
 });
 
 image.addEventListener("dragend", function (event) {

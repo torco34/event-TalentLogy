@@ -9,28 +9,71 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class=""></nav>
+    <nav class="">
+      <div class="container text-center titulo">
+        <h1>EJERCICIO DE EVENTOS</h1>
+      </div>
+    </nav>
+
+    <!-- PRIMER EJERCICIO -->
     <section class="combiar-texto">
-      <div class="elemento">
+      <div class="container rounded">
+        <div class="span">
+          <p>1</p>
+        </div>
+        <div class="texto">
+          <p>
+            Añade un evento click a un botón con ID botón y cambia el texto de
+            un elemento con ID mensaje cada vez que se haga clic. evento
+          </p>
+        </div>
         <button id="buton" class="btn btn-danger">Dar click</button>
         <p id="mensaje">este mensaje cambiara cuando le des click</p>
       </div>
     </section>
+    <!-- SEGUNDO EJERCICIO -->
     <section>
-      <form id="form">
-        <label for="name">Nombre:</label>
-        <input type="text" id="text" name="name" /><br /><br />
-        <input type="submit" value="Enviar" />
-      </form>
-    </section>
-    <section>
-      <div id="element" class="element">
-        aqui van cambiando de color
-        <button id="color" class="btn btn-danger">toggle</button>
+      <div class="container">
+        <div class="span">
+          <p>2</p>
+        </div>
+        <div class="texto">
+          <p>
+            Añade un evento submit a un formulario y muestra una alerta con el
+            contenido del campo nombre al enviar el formulario. evento
+          </p>
+        </div>
+        <form id="form">
+          <label for="name">Nombre:</label>
+          <input type="text" id="text" name="name" /><br /><br />
+          <input type="submit" class="btn btn-danger" value="Enviar" />
+        </form>
       </div>
     </section>
+    <!--TERCER EJERCICIO -->
     <section>
-      <div class="element">
+      <div id="element" class="container">
+        <div class="span">
+          <p>3</p>
+        </div>
+        <div class="texto">
+          <p>
+            Cambia el color de fondo de un elemento con ID cambio-color al hacer
+            clic en un botón con ID boton-color. evento
+          </p>
+        </div>
+        <div id="element" class="element">
+          Cambiando de color
+          <button id="color" class="btn btn-danger">toggle</button>
+        </div>
+      </div>
+    </section>
+    <!-- CUARTO EJERCICIO -->
+    <section>
+      <div class="container">
+        <div class="span">
+          <p>4</p>
+        </div>
         <h2>quita un bloque y pone</h2>
         <button id="boton3" class="btn btn-danger">bloque</button>
         <div id="bloque" class="bloque color">
@@ -41,8 +84,12 @@
         </div>
       </div>
     </section>
+    <!-- QUINTO EJERCICIO -->
     <section>
       <div class="container">
+        <div class="span">
+          <p>5</p>
+        </div>
         <div class="texto">
           <p>
             Añade un elemento li a una lista ul cada vez que se haga clic en un
@@ -57,8 +104,12 @@
         </ul>
       </div>
     </section>
+    <!-- SEXTO EJERCICIO -->
     <section>
       <div class="container">
+        <div class="span">
+          <p>6</p>
+        </div>
         <div class="text">
           <p>
             Añade una clase CSS activo a un elemento con ID ítem1 al hacer clic
@@ -74,8 +125,12 @@
         </div>
       </div>
     </section>
+    <!-- séptimo  EJERCICIO -->
     <section>
-      <div class="container">
+      <div id="menu" class="container">
+        <div class="span">
+          <p>7</p>
+        </div>
         <div class="text">
           <p>
             Añade un evento scroll a la ventana y cambia el color de fondo de un
@@ -83,7 +138,7 @@
             de 200 píxeles.
           </p>
         </div>
-        <div id="menu" class="continer-ejercicio border">
+        <div class="continer-ejercicio border">
           <header>
             <h5>scroll</h5>
           </header>
@@ -126,8 +181,13 @@
         </div>
       </div>
     </section>
+    <!-- NOVENO EJERCICIO -->
     <section>
       <div class="container">
+        <div class="span">
+          <p>9</p>
+        </div>
+
         <div class="texto">
           <p>
             Añade un evento mouseover a una imagen y muestra un texto
@@ -142,8 +202,12 @@
         </div>
       </div>
     </section>
+    <!-- DÉCIMO EJERCICIO -->
     <section>
       <div class="container">
+        <div class="span">
+          <p>10</p>
+        </div>
         <div class="texto">
           <p>
             Añade un evento click a un botón con ID botón y muestra un mensaje
@@ -156,8 +220,12 @@
         </div>
       </div>
     </section>
+    <!-- ONCE EJERCICIO -->
     <section>
       <div class="container">
+        <div class="span">
+          <p>11</p>
+        </div>
         <div class="texto">
           <p>
             Añade un evento change a un select con ID select y muestra el valor
@@ -174,8 +242,12 @@
         </div>
       </div>
     </section>
+    <!-- DOCE EJERCICIO -->
     <section>
       <div class="container">
+        <div class="span">
+          <p>12</p>
+        </div>
         <div class="texto">
           <p>
             Añade un evento dragstart a una imagen y cambia el texto de un
@@ -184,7 +256,7 @@
         </div>
 
         <img id="image" src="./img/bonita.jpeg" width="30%" draggable="true" />
-        <p id="texto">aquí</p>
+        <p id="texto">....</p>
       </div>
     </section>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
