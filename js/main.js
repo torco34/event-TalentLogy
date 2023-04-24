@@ -19,6 +19,7 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
   const name = document.getElementById("text").value;
   alert(`El nombre ingresado es: ${name}`);
+  form.reset();
 });
 // ejercicio  3
 const color = document.getElementById("color");
