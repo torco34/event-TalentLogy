@@ -48,11 +48,37 @@ btn5.addEventListener("click", function () {
 const items = document.querySelectorAll('[id^="item"]');
 console.log(items);
 items.forEach(function (item) {
-  item.addEventListener("click", function() {
-    items.forEach(function(item) {
+  item.addEventListener("click", function () {
+    items.forEach(function (item) {
       item.classList.remove("active");
     });
     this.classList.add("active");
     // this.classList.add('activo');
   });
+});
+// ejercicio 7
+// Obtén el elemento con ID "menu"
+const menu = document.getElementById("menu");
+console.log(menu);
+// Agrega un controlador de eventos de desplazamiento a la ventana
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    menu.style.backgroundColor = "blue";
+  } else {
+    menu.style.backgroundColor = "";
+  }
+});
+// ejercicio 8
+const img = document.getElementById("img");
+console.log(img);
+let estados = true;
+img.addEventListener("mouseover", function () {
+  const descripcion = document.getElementById("descripcion");
+  if (estados) {
+    descripcion.textContent = "Texto descriptivo de la imagen.";
+    estados = false;
+  } else {
+    descripcion.textContent = "";
+    estados = true;
+  }
 });

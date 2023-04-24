@@ -9,3 +9,32 @@
 .active {
   background-color: #917fb3;
 }
+.continer-ejercicio {
+  height: 30vh;
+  overflow: auto;
+  padding: 10px;
+  width: 40%;
+}
+#img {
+  position: relative;
+  width: 500px;
+  height: 400px;
+}
+#img img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.descripcion {
+  position: absolute;
+  top: 0;
+  color: azure;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.descripcion:hover p{
+    color: rgb(40, 141, 141);
+  }
+  
