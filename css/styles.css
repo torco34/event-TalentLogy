@@ -78,3 +78,7 @@ body {
 .titulo h1 {
   color: #d14d72;
 }
+.titulo a {
+  color: #000;
+  font-size: 50px;
+}
