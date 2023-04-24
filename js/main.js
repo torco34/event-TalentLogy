@@ -46,7 +46,7 @@ btn5.addEventListener("click", function () {
 });
 // ejercicio 6
 const items = document.querySelectorAll('[id^="item"]');
-console.log(items);
+
 items.forEach(function (item) {
   item.addEventListener("click", function () {
     items.forEach(function (item) {
@@ -60,6 +60,7 @@ items.forEach(function (item) {
 // Obtén el elemento con ID "menu"
 const menu = document.getElementById("menu");
 console.log(menu);
+1;
 // Agrega un controlador de eventos de desplazamiento a la ventana
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
@@ -70,7 +71,7 @@ window.addEventListener("scroll", () => {
 });
 // ejercicio 8
 const img = document.getElementById("img");
-console.log(img);
+
 let estados = true;
 img.addEventListener("mouseover", function () {
   const descripcion = document.getElementById("descripcion");
@@ -81,4 +82,43 @@ img.addEventListener("mouseover", function () {
     descripcion.textContent = "";
     estados = true;
   }
+});
+
+// ejercicio 9
+const btn9 = document.getElementById("btn9");
+
+btn9.addEventListener("click", function () {
+  const element = document.getElementById("element");
+  // console.log(`no se qie`);
+  // console.log(` ${element}`);
+  const confirmar = confirm(
+    `¿Estás seguro de que deseas eliminar el elemento?`
+  );
+  if (confirmar) {
+    element.style.display = "none";
+    element.remove();
+    console.log(`estoy dentro del di`);
+  }
+});
+// ejercicio 10
+
+const select = document.getElementById("select");
+const valor = document.getElementById("valor");
+select.addEventListener("change", (e) => {
+  valor.textContent = e.target.value;
+});
+
+// ejercicio 11
+
+const image = document.getElementById("image");
+const texto = document.getElementById("texto");
+
+image.addEventListener("dragstart", function (event) {
+  texto.innerHTML = "Arrastrando la imagen";
+ 
+});
+
+image.addEventListener("dragend", function (event) {
+  // Cambiar el texto del mensaje después de soltar la imagen
+  texto.innerHTML = "La imagen se soltó.";
 });

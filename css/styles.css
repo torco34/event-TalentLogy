@@ -34,7 +34,11 @@
   justify-content: center;
   align-items: center;
 }
-.descripcion:hover p{
-    color: rgb(40, 141, 141);
-  }
-  
+.descripcion:hover p {
+  color: rgb(40, 141, 141);
+}
+.eliminar {
+  width: 400px;
+  height: 400px;
+  background-color: blueviolet;
+}
