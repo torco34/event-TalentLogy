@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
   <body>
@@ -31,13 +32,29 @@
     <section>
       <div class="element">
         <h2>quita un bloque y pone</h2>
-        <button id="color" class="btn btn-danger">toggle</button>
-        <div id="bloque">
+        <button id="boton3" class="btn btn-danger">bloque</button>
+        <div id="bloque" class="bloque color">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
             optio cum molestias blandit
           </p>
         </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="texto">
+          <p>
+            Añade un elemento li a una lista ul cada vez que se haga clic en un
+            botón con ID boton-li.
+          </p>
+        </div>
+        <button id="btn-5" class="btn btn-danger">agregarlista</button>
+        <ul id="agreLista">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
       </div>
     </section>
     <script src="./bootstrap/js/bootstrap.min.js"></script>

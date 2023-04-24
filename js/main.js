@@ -28,4 +28,19 @@ color.addEventListener("click", function () {
     estado = true;
   }
 });
-// ejercicio 
+// ejercicio
+const boton3 = document.getElementById("boton3");
+const bloque = document.getElementById("bloque");
+boton3.addEventListener("click", function () {
+  bloque.classList.toggle("bloque");
+});
+
+// ejercico 5
+const btn5 = document.getElementById("btn-5");
+const lista = document.getElementById("agreLista");
+console.log(lista);
+btn5.addEventListener("click", function () {
+  const nuevoElementoLi = document.createElement("li");
+  nuevoElementoLi.textContent = "Nuevo elemento de lista";
+  lista.appendChild(nuevoElementoLi);
+});
